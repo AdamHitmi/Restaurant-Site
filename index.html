@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="backgrounds/l.png">
+    <title>Javascript Practice</title>
+</head>
+<body>
+
+   <!----Home Section---->
+<section class="home" id="home">
+        <header>
+            <div class="logo-info">
+                <img src="backgrounds/l.png">
+                <h1>La Boom</h1>
+            </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home"> Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#offer">Offer</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+               <button class="ham-menu" onclick="showMenu()">
+                    <i class="fa-solid fa-bars"></i>
+               </button>
+              <div class="side-bar" id="sideBar">
+                <button class="close-icon" onclick="hideMenu()">
+                <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul>
+                    <li><a href="#home" onclick="clicked()"> Home</a></li>
+                    <li><a href="#about"  onclick="clicked()">About</a></li>
+                    <li><a href="#offer"  onclick="clicked()">Offer</a></li>
+                    <li><a href="#menu"  onclick="clicked()">Menu</a></li>
+                    <li><a href="#blog"  onclick="clicked()">Blog</a></li>
+                    <li><a href="#contact"  onclick="clicked()">Contact</a></li>
+                </ul>
+              </div> 
+        </header>
+        <div class="home-title">
+            <h1><span class="text-1">Welcome To</span> <span class="text-2">LABOOM</span> Restaurant</h1>
+            <p>Traditional Turkish Delicacies</p>
+            <a href="">Book a Table</a>
+        </div>
+ </section>
+<!----End Home Section---->
+
+<!----About Section---->
+<section class="about" id="about">
+    <img src="backgrounds/icon1.png" class="trans-1">
+ <div class="title">
+    <h1>The La Boom history</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur.</p>
+ </div>
+ <img src="backgrounds/icon3.png" class="trans-2">
+   <div class="history">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Maxime modi deleniti repellat quo beatae quidem aliquid dolorem inventore sit! 
+        Nesciunt doloremque consequatur nihil non reprehenderit quidem, delectus, veniam quisquam corporis libero unde dolores rem at quasi eligendi numquam sed dolor a deleniti praesentium corrupti? Animi, officiis illum? Molestiae voluptatum, odio magni tempore hic iste in atque, similique sequi iusto aut.
+       <br>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam delectus enim nostrum sapiente illum tempore voluptatum error eveniet iste explicabo.   
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, minus.
+       <br>
+       <a href="#home"><button>LEARN MORE</button></a>
+    </p>
+    <img src="backgrounds/about img1.png">
+   </div> 
+   <div class="trans-icon">
+    <img src="backgrounds/icon2.png" >
+    <img src="backgrounds/icon4.png">
+   </div>
+</section> 
+<!----End About Section---->
+
+<!----Offers Section---->
+<section class="offers" id="offer">
+    <h1 class="offer-title">Our Special Offers</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+   <div class="offers-dishes">
+     <div>
+        <img src="backgrounds/offer1.png">
+        <h1>Quattro Formaggi</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, odio.</p>
+        <div class="price">
+            <p>$ 55.00</p>
+            <span>$ 18.00</span>
+        </div>
+    </div>
+     <div>
+        <img src="backgrounds/offer2.png">
+        <h1>Vegetarian Pasta</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, odio.</p>
+        <div class="price">
+            <p>$ 52.00</p>
+            <span>$ 16.00</span>
+        </div>
+     </div>
+     <div>
+        <img src="backgrounds/offer3.png">
+        <h1>Gluten-Free Pasta</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, odio.</p>
+        <div class="price">
+            <p>$ 60.00</p>
+            <span>$ 20.00</span>
+        </div>
+     </div>
+   </div> 
+</section>
+<!----End Offers Section---->
+
+<!----Menu Section---->
+<section class="menu" id="menu">
+   <img src="backgrounds/icon-1.png" class="icon-1"> 
+    <h1>Our Special Menu</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Iste explicabo eveniet.</p>
+   <img src="backgrounds/icon-2.png" class="icon-2">  
+<nav>
+    <ul>
+        <li class="all" id="bg1"><a href="#allMenus" onclick="a()" id="color1">All</a></li>
+        <li class="breakfast" id="bg2"><a href="#breakFast" onclick="breakfast()" id="color2">BREAKFAST</a></li>
+        <li class="dessert" id="bg3"><a href="#Dessert" onclick="dessert()" id="color3">DESSERT</a></li>
+        <li class="lunch" id="bg4"><a href="#Lunch" onclick="lunch()" id="color4">LUNCH</a></li>
+        <li class="freshfood" id="bg5"><a href="#Freshfood" onclick="freshfood()" id="color5">FRESHFOOD</a></li>
+    </ul>
+</nav>
+
+<div class="all-menus" id="allMenus">
+  <div class="first-section-menu">  
+   <div class="menu">
+   <img src="backgrounds/food1.png">
+   <div class="menu-info">
+      <h2>LASAL CHEESE<span>$ 18.00</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+   </div>
+   </div> 
+   <div class="menu">
+   <img src="backgrounds/food3.png">
+   <div class="menu-info">
+      <h2>SURMAI CHILLI<span>$ 57.00</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+   </div>
+   </div>
+   <div class="menu">
+   <img src="backgrounds/food5.png">
+   <div class="menu-info">
+      <h2>ORGANIC FRUIT SALAD<span>$ 12.00</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+   </div>
+   </div>
+   <div class="menu">
+   <img src="backgrounds/food7.jpg">
+   <div class="menu-info">
+      <h2>MEAT KOFTA<span>$ 21.00</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+   </div>
+   </div>
+   <div class="menu">
+   <img src="backgrounds/food9.jpg">
+   <div class="menu-info">
+      <h2>CHEESE TOST<span>$ 42.00</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+   </div>
+   </div>
+   <div class="menu">
+   <img src="backgrounds/food11.jpg">
+   <div class="menu-info">
+      <h2>CHICKEN SHAWARMA<span>$ 20.00</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+   </div>
+   </div>
+ </div>
+
+ <div class="second-section-menu">
+    <div class="menu">
+    <img src="backgrounds/food2.png">
+    <div class="menu-info">
+       <h2>JUMBO CARB SHRIMP<span>$ 28.00</span></h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+    </div>
+    </div>
+    <div class="menu">
+    <img src="backgrounds/food4.png">
+    <div class="menu-info">
+       <h2>CAPO STEAK<span>$ 123.00</span></h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+    </div>
+    </div>
+    <div class="menu">
+    <img src="backgrounds/food-6.png">
+    <div class="menu-info">
+       <h2>PRAWNS BUTTER GARLIC<span>$ 48.00</span></h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+    </div>
+    </div>
+    <div class="menu">
+    <img src="backgrounds/food8.jpg">
+    <div class="menu-info">
+       <h2>SPANISH PIES<span>$ 36.00</span></h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+    </div>
+    </div>
+    <div class="menu">
+    <img src="backgrounds/food10.jpg">
+    <div class="menu-info">
+       <h2>FRUIT SALAD<span>$ 12.00</span></h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+    </div>
+    </div>
+    <div class="menu">
+    <img src="backgrounds/food12.jpg">
+    <div class="menu-info">
+       <h2>MEGA CHEESE PIZZA<span>$ 98.00</span></h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+    </div>
+    </div>
+ </div>
+</div>
+
+<div class="breakfast-menus" id="breakFast">
+ <div class="first-section-menu">
+   <div class="menu">
+      <img src="backgrounds/food1.png">
+      <div class="menu-info">
+         <h2>LASAL CHEESE<span>$ 18.00</span></h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+      </div>
+   </div>
+  </div>
+
+<div class="second-section-menu">
+   <div class="menu">
+      <img src="backgrounds/food9.jpg">
+      <div class="menu-info">
+         <h2>CHEESE TOST<span>$ 42.00</span></h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+      </div>
+   </div>
+</div>
+</div>
+
+<div class="dessert-menus" id="Dessert">
+   <div class="first-section-menu">
+      <div class="menu">
+         <img src="backgrounds/food2.png">
+         <div class="menu-info">
+            <h2>JUMBO CARB SHRIMP<span>$ 28.00</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+         </div>
+     </div>
+   </div>
+   <div class="second-section-menu">
+   </div>
+</div>
+
+<div class="lunch-menus" id="Lunch">
+   <div class="first-section-menu">
+      <div class="menu">
+         <img src="backgrounds/food3.png">
+         <div class="menu-info">
+            <h2>SURMAI CHILLI<span>$ 57.00</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+         </div>
+      </div>
+       <div class="menu">
+            <img src="backgrounds/food7.jpg">
+            <div class="menu-info">
+               <h2>MEAT KOFTA<span>$ 21.00</span></h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+            </div>
+         </div>
+         <div class="menu">
+               <img src="backgrounds/food12.jpg">
+               <div class="menu-info">
+                  <h2>MEGA CHEESE PIZZA<span>$ 98.00</span></h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+            </div>
+            </div> 
+     </div>
+   
+   <div class="second-section-menu">
+      <div class="menu">
+         <img src="backgrounds/food-6.png">
+         <div class="menu-info">
+            <h2>PRAWNS BUTTER GARLIC<span>$ 48.00</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+         </div>
+      </div>
+         <div class="menu">
+            <img src="backgrounds/food11.jpg">
+            <div class="menu-info">
+               <h2>CHICKEN SHAWARMA<span>$ 20.00</span></h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+            </div>
+            </div>
+   </div>
+</div>
+
+<div class="freshfood-menus" id="Freshfood">
+   <div class="first-section-menu">
+      <div class="menu">
+         <img src="backgrounds/food4.png">
+         <div class="menu-info">
+            <h2>CAPO STEAK<span>$ 123.00</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+         </div> 
+      </div>
+      <div class="menu">
+         <img src="backgrounds/food10.jpg">
+         <div class="menu-info">
+            <h2>FRUIT SALAD<span>$ 12.00</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+         </div>
+         </div> 
+   </div>
+   <div class="second-section-menu">
+      <div class="menu">
+         <img src="backgrounds/food5.png">
+         <div class="menu-info">
+            <h2>ORGANIC FRUIT SALAD<span>$ 12.00</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempore.</p>
+         </div>
+         </div>
+   </div>
+</div>
+
+<div class="div-btn">
+   <a href="#menu" class="explore-btn">EXPLORE FULL MENU</a>
+   </div>
+   <div class="icons">
+   <img src="backgrounds/icon-3.png" class="icon-3"> 
+   <img src="backgrounds/icon-4.png" class="icon-4"> 
+   </div>
+<!----End Menu Section---->
+
+   <!----Time Section---->
+
+<section class="time">
+   <div class="container">
+      <div class="time-info">
+         <img src="backgrounds/breckfastIcon.png" class="breakfast-icon">
+         <h1>Breakfast</h1>
+         <p class="p">8:00 am to 10:00 am</p>
+      </div>
+      <div class="time-info">
+         <img src="backgrounds/lunchIcon.png">
+         <h1>Lunch</h1>
+         <p class="p">4:00 pm to 7:00 pm</p>
+      </div>
+      <div class="time-info">
+         <img src="backgrounds/dinnerIcon.png">
+         <h1>Dinner</h1>
+         <p class="p">9:00 pm to 1:00 am </p>
+      </div>
+      <div class="time-info">
+         <img src="backgrounds/dessertIcon (1).png">
+         <h1>Dessert</h1>
+         <p class="p">All Day</p>
+      </div>
+   </div>
+</section>
+</section>
+<!----End Time Section---->
+
+<!----Blog Section---->
+<section class="blog" id="blog">
+  <h1>Feature Blog</h1>
+  <p>Read Latest Delicious Posts And News</p>
+<div class="container">
+ <div class="blog-card">
+   <img src="backgrounds/blog1.jpg">
+   <div class="date"><p class="date-p">24 <br> <span>Jan</span></p></div>
+   <div class="blog-info">
+      <div class="blog-name">
+         <i class="fa-regular fa-user"></i>
+         <p>By Ali Tufan</p>
+   
+         <i class="fa-regular fa-comments"></i>
+         <p>5 Comments</p>
+        </div> 
+        <h1>Easy Sparkling Sangria</h1> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, doloremque?</p>
+        <a href="#home">Read More <i class="fa-solid fa-arrow-right"></i></a>
+   </div>
+ </div>
+ <div class="blog-card">
+   <div class="div-img"><img src="backgrounds/blog2.jpg"></div>
+   <div class="date"><p class="date-p">27 <br> <span>May</span></p></div>
+   <div class="blog-info">
+     <div class="blog-name">
+      <i class="fa-regular fa-user"></i>
+      <p>By Ali Tufan</p>
+
+      <i class="fa-regular fa-comments"></i>
+      <p>5 Comments</p>
+     </div>
+     <h1>Easy Sparkling Sangria</h1> 
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, doloremque?</p>
+     <a href="#home">Read More <i class="fa-solid fa-arrow-right"></i></a>
+   </div>
+ </div>
+ <div class="blog-card">
+   <img src="backgrounds/blog3.jpg" >
+   <div class="date"><p class="date-p">12 <br> <span>Sep</span> </p></div>
+   <div class="blog-info">
+      <div class="blog-name">
+         <i class="fa-regular fa-user"></i>
+         <p>By Ali Tufan</p>
+   
+         <i class="fa-regular fa-comments"></i>
+         <p>5 Comments</p>
+        </div>
+        <h1>Easy Sparkling Sangria</h1> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, doloremque?</p>
+        <a href="#home">Read More <i class="fa-solid fa-arrow-right"></i></a>
+   </div>
+ </div> 
+</div>
+</section>
+<!----End Blog Section---->
+
+<!----Start Contact Section---->
+<section class="contact" id="contact">
+   <img src="backgrounds/laboom.png">
+   <h1>La boom Restaurant</h1>
+   <p>329 Queensberry Street, North Melbourne VIC 3051, Australia</p>
+   <p>123 456 7890</p>
+   <p>hitmiadam96@gmail.com</p>
+
+  <div class="copyright">
+   <p>Copyright <i class="fa-regular fa-copyright" style="color: #5c5c6e;"></i> 2023 All rights reserved | made by <span>Adam Hitmi</span></p>
+   <ul class="icons">
+      <a href="https://www.facebook.com/adam.hitmi.944?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://instagram.com/adam_hitmi?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/adam-hitmi-8ab100289"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="tel:+212 649898456"><i class="fa-brands fa-whatsapp"></i></a>
+   </ul>
+  </div> 
+</section>
+<!----End Contact Section---->
+
+
+
+<a class="scroll-up" href="#home">
+    <i class="fa-solid fa-arrow-up"></i>
+</a>
+    <script src="https://kit.fontawesome.com/c01908d34c.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
